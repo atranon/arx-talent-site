@@ -6,10 +6,15 @@ import {
   Search, Clock
 } from 'lucide-react';
 
-// --- Components ---
 // --- LOGO CONFIGURATION ---
-// const arxLogo = "https://i.imgur.com/nyzfgLC.png";  <-- Comment this out
-import arxLogo from './arx.jpg';                       
+// INSTRUCTIONS:
+// 1. Upload your logo to https://postimages.org/
+// 2. Copy the "Direct Link" (ending in .jpg or .png)
+// 3. Paste it inside the quotes below.
+const arxLogo = "https://i.postimg.cc/nhCgpnxr/arx.jpg"; 
+// ^ I added a temporary placeholder. Replace this with your actual link.
+
+// --- Components ---
 
 const Button = ({ children, variant = 'primary', className = '', onClick }) => {
   const baseStyle = "px-6 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2";
@@ -665,10 +670,13 @@ const App = () => {
             className="cursor-pointer flex items-center gap-2"
           >
             <img 
-              //src="https://i.imgur.com/nyzfgLC.png" 
+              src={arxLogo} 
               alt="Arx Talent Logo" 
               className="h-10 w-auto"
             />
+            <span className={`font-bold text-xl ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+              Arx Talent
+            </span>
           </div>
 
           {/* Desktop Nav */}
@@ -744,7 +752,7 @@ const App = () => {
             <div>
               <div className="flex items-center gap-2 mb-6">
                  <img 
-                   //src="https://i.imgur.com/nyzfgLC.png" 
+                   src={arxLogo} 
                    alt="Arx Talent" 
                    className="h-8 w-auto rounded" 
                  />
