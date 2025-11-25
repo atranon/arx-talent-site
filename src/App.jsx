@@ -7,6 +7,9 @@ import {
 } from 'lucide-react';
 
 // --- Components ---
+// --- LOGO CONFIGURATION ---
+// const arxLogo = "https://i.imgur.com/nyzfgLC.png";  <-- Comment this out
+import arxLogo from './arx.jpg';                       
 
 const Button = ({ children, variant = 'primary', className = '', onClick }) => {
   const baseStyle = "px-6 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2";
@@ -662,7 +665,7 @@ const App = () => {
             className="cursor-pointer flex items-center gap-2"
           >
             <img 
-              src="https://i.imgur.com/nyzfgLC.png" 
+              //src="https://i.imgur.com/nyzfgLC.png" 
               alt="Arx Talent Logo" 
               className="h-10 w-auto"
             />
@@ -741,7 +744,7 @@ const App = () => {
             <div>
               <div className="flex items-center gap-2 mb-6">
                  <img 
-                   src="https://i.imgur.com/nyzfgLC.png" 
+                   //src="https://i.imgur.com/nyzfgLC.png" 
                    alt="Arx Talent" 
                    className="h-8 w-auto rounded" 
                  />
