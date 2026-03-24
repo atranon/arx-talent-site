@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0A0C10;
+  --color-surface: #111318;
+  --color-border: #1E2230;
+  --color-accent: #2563EB;
+  --color-accent-glow: #3B82F6;
+  --color-text-primary: #F0F2F8;
+  --color-text-muted: #6B7280;
+  --color-text-dim: #374151;
+  --color-success: #10B981;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-dim);
+}
+
+/* Grid background pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(30, 34, 48, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 34, 48, 0.5) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Blue radial glow */
+.blue-glow {
+  background: radial-gradient(ellipse 600px 400px at 30% 50%, rgba(37, 99, 235, 0.15), transparent);
+}
+
+/* Blue radial glow for CTA */
+.blue-glow-center {
+  background: radial-gradient(ellipse 600px 400px at 50% 50%, rgba(37, 99, 235, 0.12), transparent);
+}
+
+/* Pulse animation for status badges */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
